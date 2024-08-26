@@ -1,6 +1,19 @@
-# Welcome to your Expo app 👋
+# Part Petro Kala App 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/SepehrNorouzi7/Part-Petro-Kala/blob/main/screenshots/screenshot-1(iPhone%2014%20Pro%20Max).png" alt="Image 1" width="33%" />
+  <img src="https://github.com/SepehrNorouzi7/Part-Petro-Kala/blob/main/screenshots/screenshot-2(iPhone%2014%20Pro%20Max).png" alt="Image 2" width="33%" />
+  <img src="https://github.com/SepehrNorouzi7/Part-Petro-Kala/blob/main/screenshots/screenshot-3(iPhone%2014%20Pro%20Max).png" alt="Image 3" width="33%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/SepehrNorouzi7/Part-Petro-Kala/blob/main/screenshots/screenshot-1(iPad%20Pro).png" alt="Image 4" width="40%" />
+  <img src="https://github.com/SepehrNorouzi7/Part-Petro-Kala/blob/main/screenshots/screenshot-2(iPad%20Pro).png" alt="Image 5" width="40%" />
+</p>
 
 ## Get started
 
