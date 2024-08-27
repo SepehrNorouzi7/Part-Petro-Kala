@@ -1,5 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, ScrollView, SafeAreaView, View, TouchableOpacity, Linking, Text } from 'react-native';
+import { StyleSheet, Image, ScrollView, View, TouchableOpacity, Linking, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function TabFourScreen() {
   const handlePress = (url: string) => {
@@ -51,7 +52,7 @@ export default function TabFourScreen() {
 const styles = StyleSheet.create({
   header: {
     backgroundColor: '#46BDAD',
-    height: '20%',
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
   },

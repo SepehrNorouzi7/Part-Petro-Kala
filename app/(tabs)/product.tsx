@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, Platform, ScrollView, SafeAreaView, TouchableOpacity, View } from 'react-native';
-
+import { StyleSheet, Image, Platform, ScrollView, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
@@ -30,12 +30,12 @@ export default function TabTwoScreen() {
         {items.map((item, index) => (
           <TouchableOpacity key={index} onPress={() => toggleItem(item.name)}>
             <ThemedView style={styles.item}>
-              <ThemedText>{item.name}</ThemedText>
+              <ThemedText style={styles.itemText}>{item.name}</ThemedText>
               <Ionicons name={activeItem === item.name ? 'chevron-up' : 'chevron-down'} size={20} color="black" />
             </ThemedView>
             {activeItem === item.name && (
               <View style={styles.collapsibleContent}>
-                <ThemedText>{item.description}</ThemedText>
+                <ThemedText style={styles.itemText}>{item.description}</ThemedText>
               </View>
             )}
           </TouchableOpacity>
@@ -47,11 +47,9 @@ export default function TabTwoScreen() {
 
 const styles = StyleSheet.create({
   item: {
-    top: 20,
+    marginTop: 20,
     width: '100%',
-    height: 50,
-    padding: 2,
-    paddingHorizontal: 9,
+    padding: 12,
     borderRadius: 7,
     backgroundColor: '#FFFFFF',
     shadowColor: '#000000',
@@ -67,15 +65,17 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  itemText: {
+    textAlign: 'left',
+  },
   collapsibleContent: {
-    top: 20,
     paddingHorizontal: 10,
-    paddingBottom: 10,
+    paddingVertical: 10,
   },
   header: {
     backgroundColor: '#46BDAD',
     top: 0,
-    height: '20%',
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -88,3 +88,5 @@ const styles = StyleSheet.create({
     paddingHorizontal: '5%',
   },
 });
+
+

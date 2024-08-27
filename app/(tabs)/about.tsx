@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, ScrollView, SafeAreaView, View, Text } from 'react-native';
-import { Collapsible } from '@/components/Collapsible';
+import { StyleSheet, Image, ScrollView, View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function TabThreeScreen() {
   return (
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: '#46BDAD',
     top: 0,
-    height: '20%',
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 10,
     color: '#333',
+    textAlign: 'left',
   },
   subtitle: {
     fontSize: 20,
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 10,
     color: '#333',
+    textAlign: 'left', 
   },
   paragraph: {
     fontSize: 16,

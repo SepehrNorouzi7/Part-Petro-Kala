@@ -1,5 +1,5 @@
-import { StyleSheet, Image, ScrollView, SafeAreaView, View } from 'react-native';
-
+import { StyleSheet, Image, ScrollView, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
@@ -39,7 +39,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   header: {
     backgroundColor: '#46BDAD',
-    height: '20%',
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
   },
